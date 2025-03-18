@@ -1,38 +1,132 @@
 .robot-container {
+  position: relative;
+  background-color: rgb(120, 120, 203);
+  background-image: linear-gradient(#ffd89b, #19547b);
 }
 
 .robot-face-shape {
+  position: relative;
+  margin: 15% auto;
+  width: 400px;
+  height: 400px;
+  background-image: linear-gradient(rgb(121, 105, 105), rgb(179, 187, 195));
+  border-radius: 55px;
+  border: 10px double rgb(0, 0, 0);
 }
 
 .robot-eye-left {
+  position: relative;
+  top: 60px;
+  left: 10%;
+  width: 35%;
+  height: 20%;
+  background-image: radial-gradient(red, rgb(19, 107, 223));
+  border-radius: 100px / 50px;
 }
 
 .robot-eye-right {
-}
-
-.robot-ear-left {
-}
-
-.robot-ear-right {
+  position: relative;
+  top: 25px;
+  left: 60%;
+  width: 100px;
+  height: 20px;
+  background-image: radial-gradient(red, rgb(19, 107, 223));
 }
 
 .robot-nose {
+  position: relative;
+  top: 60px;
+  left: 37%;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid rgb(62, 81, 132);
 }
 
 .robot-teeth {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  top: 90px;
+  left: 15%;
 }
 
-.robot-tooth {
+.robot-tooth-down {
+  margin: 10px auto;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 60px solid rgb(102, 68, 126);
+  margin: 1px;
+}
+.robot-tooth-up {
+  margin: 10px auto;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 60px solid rgb(154, 107, 188);
+  margin: 1px;
+}
+
+.robot-ear-left {
+  position: relative;
+  bottom: 550px;
+  left: 410px;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-right: 100px solid rgb(36, 14, 229, 50%);
+  border-bottom: 50px solid transparent;
+}
+
+.robot-ear-right {
+  position: relative;
+  bottom: 650px;
+  left: 930px;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-left: 100px solid rgb(36, 14, 229);
+  border-bottom: 50px solid transparent;
 }
 
 .robot-hair-style {
+  position: relative;
+  bottom: 940px;
+  left: 37.5%;
+  display: flex;
+  flex-direction: row;
 }
 
 .robot-hair-one {
+  width: 3.125em;
+  height: 3.125em;
+  background: SlateBlue;
+  border-radius: 50%;
+  margin-top: 4.375em;
+  border: 0.1875em solid black;
 }
 
 .robot-hair-two {
+  width: 70px;
+  height: 70px;
+  background: rgb(126, 33, 180);
+  border-radius: 50%;
+  margin-top: 50px;
+  border: 3px solid black;
 }
 
 .robot-hair-three {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgb(75, 11, 98);
+  background-image: url("https://picsum.photos/seed/picsum/200/300");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: 3px solid black;
 }
